@@ -1,87 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-</head>
-<body>
-  <div class="navbar">
-    <img src="./assets/images/logo.svg" alt="">
-    <nav>
-      <a href="">Home</a>
-      <a href="">New</a>
-      <a href="">Popular</a>
-      <a href="">Trending</a>
-      <a href="">Categories</a>
-    </nav>
-  </div>
-  <main>
-    <section class="top">
-      <picture>
-        <source media="(min-width:400px)" srcset="./assets/images/image-web-3-mobile.jpg">
-        <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="top-img">
-      </picture>
-      <h1 class="top-title">The Bright Future of Web 3.0?</h1>
-      <div class="top-description">
-        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?</p>
-        <button>Read more</button>
-      </div>
-    </section>
-    <section class="new">
-      <h2>New</h2>
-      <div class="new-article">
-        <h3 class="new-title">Hydrogen VS Electric Cars</h3>
-        <p class="new-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </div>
-      <div class="new-article">
-        <h3 class="new-title">The Downsides of AI Artistry</h3>
-        <p class="new-description">What are the possible adverse effects of on-demand AI image generation?</p>
-      </div>
-      <div class="new-article">
-        <h3 class="new-title">Is VC Funding Drying Up?</h3>
-        <p class="new-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </div>
-    </section>
-    <section class="popular">
-      <div class="popular-article">
-        <img src="./assets/images/image-retro-pcs.jpg" alt="" class="popular-img">
-        <div class="popular-text">
-          <h2 class="popular-number">01</h2>
-          <h3 class="popular-title">Reviving Retro PCs</h3>
-          <p class="popular-description">What happens when old PCs are given modern upgrades?</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="">
+          <img src="./assets/images/logo.svg" alt="" class="logo" />
+        </a>
+        <nav>
+          <a href="">Home</a>
+          <a href="">New</a>
+          <a href="">Popular</a>
+          <a href="">Trending</a>
+          <a href="">Categories</a>
+        </nav>
+        <div class="hamburger hidden" id="myBtn">
+          <img
+            src="./assets/images/icon-menu.svg"
+            alt="Menu icon"
+            class="menu-icon"
+          />
         </div>
       </div>
-      <div class="popular-article">
-        <img src="./assets/images/image-top-laptops.jpg" alt="" class="popular-img">
-        <div class="popular-text">
-          <h2 class="popular-number">02</h2>
-          <h3 class="popular-title">Top 10 Laptops of 2022</h3>
-          <p class="popular-description">Our best picks for various needs and budgets.</p>
+      <div class="content">
+        <section class="feature">
+          <picture>
+            <source
+              media="(min-width:400px)"
+              srcset="./assets/images/image-web-3-mobile.jpg"
+            />
+            <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt=""
+              class="feature-img"
+            />
+          </picture>
+          <h1 class="feature-title">The Bright Future of Web 3.0?</h1>
+          <div class="feature-description">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="">Read more</a>
+          </div>
+        </section>
+        <section class="new">
+          <h2 class="new-header">New</h2>
+          <div class="new-article">
+            <h3 class="new-title">Hydrogen VS Electric Cars</h3>
+            <p class="new-description">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="new-article">
+            <h3 class="new-title">The Downsides of AI Artistry</h3>
+            <p class="new-description">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="new-article">
+            <h3 class="new-title">Is VC Funding Drying Up?</h3>
+            <p class="new-description">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular-article article-one">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              alt=""
+              class="popular-img"
+            />
+            <div class="popular-text">
+              <h2 class="popular-number">01</h2>
+              <h3 class="popular-title">Reviving Retro PCs</h3>
+              <p class="popular-description">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div class="popular-article article-two">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt=""
+              class="popular-img"
+            />
+            <div class="popular-text">
+              <h2 class="popular-number">02</h2>
+              <h3 class="popular-title">Top 10 Laptops of 2022</h3>
+              <p class="popular-description">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="popular-article article-three">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+              class="popular-img"
+            />
+            <div class="popular-text">
+              <h2 class="popular-number">03</h2>
+              <h3 class="popular-title">The Growth of Gaming</h3>
+              <p class="popular-description">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt=""
+              class="close"
+            />
+            <nav class="modal-nav">
+              <a href="">Home</a>
+              <a href="">New</a>
+              <a href="">Popular</a>
+              <a href="">Trending</a>
+              <a href="">Categories</a>
+            </nav>
+          </div>
         </div>
       </div>
-      <div class="popular-article">
-        <img src="./assets/images/image-gaming-growth.jpg" alt="" class="popular-img">
-        <div class="popular-text">
-          <h2 class="popular-number">03</h2>
-          <h3 class="popular-title">The Growth of Gaming</h3>
-          <p class="popular-description">How the pandemic has sparked fresh opportunities.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  <script src="./script.js"></script>
-</body>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/MaruchetO" target="_blank"
+        >Maruchet O</a
+      >.
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
